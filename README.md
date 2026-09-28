@@ -42,18 +42,8 @@ An empirical evaluation of OECD well-being data before (2013–2018) and during 
 - Negative affect balance ($p = 0.56$) and log deaths of despair ($p = 0.86$) displayed absolute structural stability. Despite severe macroeconomic and social disruptions during 2021–2022, the underlying relationship between external conditions and well-being outcomes remained stable.
 - Crisis impacts shifted national outcome levels rather than altering the core structural relationships. While specific countries experienced shifts in absolute satisfaction or affect scores, the unit-change impact of key drivers (such as relational trust or employment) remained invariant.  
 
-+---------------------------------------------------------------------------------------------------+
-|                     POOLED COEFFICIENT STABILITY TESTS (PRE vs. DURING PANDEMIC)                  |
-+----------------------------------+------------------------------------+---------------------------+
-| Outcome Model                    | Joint Interaction Test (p-value)   | Structural Shift Status   |
-+----------------------------------+------------------------------------+---------------------------+
-| Life Satisfaction (Data-Driven)  | p = 0.42                           | No Shift (Stable)         |
-| Negative Affect (Data-Driven)    | p = 0.56                           | No Shift (Stable)         |
-| Log Deaths of Despair (Data-Driven)| p = 0.86                         | No Shift (Stable)         |
-| Life Satisfaction (Maslow)       | p = 0.69                           | No Shift (Stable)         |
-| Negative Affect (Maslow)         | p = 0.80                           | No Shift (Stable)         |
-| Log Deaths of Despair (Maslow)   | p = 0.86                           | No Shift (Stable)         |
-+----------------------------------+------------------------------------+---------------------------+
+<img width="500" height="300" alt="pic4" src="https://github.com/user-attachments/assets/6b2b9b60-bece-418d-92f8-c2301d13588a" />
+
 
 #### Category 3: Outcome-Specific Well-Being Drivers
 - Social capital and relational stability dominate cognitive life satisfaction. "Satisfaction with personal relationships" was the strongest predictor of pandemic life satisfaction ($\beta = 0.293, p = 0.004$), followed by "Trust in others" ($\beta = 0.153, p = 0.023$). Adding the social/relational block to material indicators increased adjusted $R^2$ from 0.53 to 0.85 ($F = 17.8, p < 0.001$).
