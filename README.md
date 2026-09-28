@@ -36,13 +36,14 @@ An empirical evaluation of OECD well-being data before (2013–2018) and during 
 
 <img width="500" height="300" alt="pic3" src="https://github.com/user-attachments/assets/b9221f94-e893-45d6-b7e1-615f3aa018d1" />
 
+
 #### Category 2: Structural Coefficient Stability During Crisis
 - Pooled Chow-style interaction tests confirm structural coefficient stability under systemic shock. Across all six estimated regression models (3 outcome-specific data-driven models and 3 Maslow models), joint interaction $p$-values between predictors and the pandemic-era dummy variable were statistically insignificant.
-- Life satisfaction drivers remained statistically unchanged between 2013–2018 and 2021–2022 ($p = 0.41$). Pre-pandemic predictor coefficients mapped directly into the pandemic window without re-ranking.
+- Life satisfaction drivers remained statistically unchanged between 2013–2018 and 2021–2022 ($p = 0.42$). Pre-pandemic predictor coefficients mapped directly into the pandemic window without re-ranking.
 - Negative affect balance ($p = 0.56$) and log deaths of despair ($p = 0.86$) displayed absolute structural stability. Despite severe macroeconomic and social disruptions during 2021–2022, the underlying relationship between external conditions and well-being outcomes remained stable.
 - Crisis impacts shifted national outcome levels rather than altering the core structural relationships. While specific countries experienced shifts in absolute satisfaction or affect scores, the unit-change impact of key drivers (such as relational trust or employment) remained invariant.  
 
-<img width="500" height="300" alt="pic4" src="https://github.com/user-attachments/assets/6b2b9b60-bece-418d-92f8-c2301d13588a" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/42bfd09b-56a6-4c37-a78e-f4577be03f97" />
 
 
 #### Category 3: Outcome-Specific Well-Being Drivers
@@ -51,17 +52,8 @@ An empirical evaluation of OECD well-being data before (2013–2018) and during 
 - Structural human capital determinants drive behavioral pathology over short-term financial transfers. For log deaths of despair, "Student science skills" (a proxy for broader educational infrastructure) served as the primary predictor ($\beta = 0.189, p = 0.052$), whereas direct disposable income per capita showed virtually zero effect ($\beta = -0.020, p = 0.849$).
 - No single indicator spans all three well-being domains. The data-driven screens selected almost entirely distinct sets: relational perception metrics for cognitive evaluation, economic participation for emotional state, and educational/health capital for behavioral outcomes.
 
-+---------------------------------------------------------------------------------------------------+
-|                        DOMINANT STATISTICAL DRIVERS BY WELL-BEING OUTCOME                         |
-+----------------------------------+--------------------------------------+---------------+---------+
-| Outcome                          | Primary Predictor                    | Coefficient β | p-value |
-+----------------------------------+--------------------------------------+---------------+---------+
-| Cognitive Life Satisfaction      | Satisfaction with relationships     | +0.293        | 0.004   |
-| Cognitive Life Satisfaction      | Trust in others                      | +0.153        | 0.023   |
-| Hedonic Negative Affect Balance  | Employment rate                      | -2.557        | 0.020   |
-| Hedonic Negative Affect Balance  | Satisfaction with time use           | -2.544        | 0.051   |
-| Behavioral Deaths of Despair     | Student science skills               | +0.189        | 0.052   |
-+----------------------------------+--------------------------------------+---------------+---------+
+<img width="700" height="300" alt="graph3" src="https://github.com/user-attachments/assets/d0c200fb-5c7c-43b3-87f9-c9796ca4d5ef" />
+
 
 #### Category 4: Diagnostic Residuals & Anomalous Country Outliers
 - Latvia represents a statistically significant response outlier. In the life satisfaction model, Latvia exhibited a studentized residual of -3.8 (Bonferroni adjusted $p = 0.03$) with low leverage (0.10). While Latvia's measured trust and time-use satisfaction were ordinary, reported life satisfaction was far below prediction (residual -0.66).
@@ -69,16 +61,8 @@ An empirical evaluation of OECD well-being data before (2013–2018) and during 
 - Greece is a high-leverage structural point rather than a response outlier. Greece demonstrated extreme leverage (0.76) and Cook's $D = 3.3$, driven by severe economic strain (71% reporting difficulty making ends meet, nearly 4 SDs above the sample mean).
 - Removing Greece resolves regression coefficient distortion. Deleting Greece via a leave-one-out refit shifted the "Difficulty making ends meet" coefficient from a non-significant +0.05 ($p = 0.53$) to a theoretically expected -0.14 ($p = 0.06$), confirming that the positive coefficient in the headline model was a high-leverage extrapolation artifact.  
 
-+---------------------------------------------------------------------------------------------------+
-|                          DIAGNOSTIC OUTLIER ANALYSIS SUMMARY (MODEL 1)                             |
-+---------+--------------------+----------+-----------+---------------------------------------------+
-| Country | Studentized Resid. | Leverage | Cook's D  | Diagnosis & Strategic Finding               |
-+---------+--------------------+----------+-----------+---------------------------------------------+
-| Latvia  | -3.8 (p = 0.03)    | 0.10     | Low       | True Response Outlier. Driven by low        |
-|         |                    |          |           | perceived health & post-transition gap.     |
-| Greece  | Non-sig (p = 0.22) | 0.76     | 3.3       | High-Leverage Point. Extreme economic       |
-|         |                    |          |           | strain distorts income adequacy slope.      |
-+---------+--------------------+----------+-----------+---------------------------------------------+
+<img width="700" height="300" alt="graph4" src="https://github.com/user-attachments/assets/a84865d5-177a-49be-93b7-4c5381d02c92" />
+
 
 #### Recommendations
 Based on the insights and findings above, we recommend government policy units and well-being budgeting teams consider the following:
@@ -94,6 +78,6 @@ Throughout the analysis, key assumptions and methodological constraints were man
 - Common-Source Variance: Life satisfaction and several top-performing screened predictors share the Gallup World Poll origin, introducing potential common-method variance that inflates relative performance over register-based indicators.
 - Ecological Fallacy: Analysis was conducted on country-level aggregate means ($N \approx 27–33$), meaning cross-sectional relationships cannot be directly inferred as individual-level causal effects.
 - Demographic Deduplication Filtering: Raw OECD data files contain overlapping rows for total, male, female, and age-disaggregated groups; explicit joint filtering to Total was required to prevent population mixing.
-- Non-Independence in Stability Testing: Pooled Chow-style stability tests stack country observations across two time windows, introducing minor temporal autocorrelation; $p$-values are interpreted as heuristic indicators of stability rather than exact tests. 
+- Non-Independence in Stability Testing: Pooled Chow stability tests stack country observations across two time windows, introducing minor temporal autocorrelation; $p$-values are interpreted as heuristic indicators of stability rather than exact tests. 
 
 
